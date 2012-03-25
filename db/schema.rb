@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120325185922) do
+ActiveRecord::Schema.define(:version => 20120325203350) do
+
+  create_table "locals", :force => true do |t|
+    t.string   "nombre"
+    t.string   "direccion"
+    t.string   "distrito"
+    t.string   "direcc_google"
+    t.string   "telefono"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "personas", :force => true do |t|
     t.string   "tipo"
