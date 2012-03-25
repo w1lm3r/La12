@@ -1,4 +1,6 @@
 LA12::Application.routes.draw do
+  resources :locals
+
   resources :personas
 
   # The priority is based upon order of creation:

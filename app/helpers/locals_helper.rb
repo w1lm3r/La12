@@ -1,0 +1,2 @@
+module LocalsHelper
+end
