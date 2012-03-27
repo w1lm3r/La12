@@ -1,0 +1,29 @@
+<h1>Listing eventodepos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Premio</th>
+    <th>Cantidad</th>
+    <th>Plazoinsc</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eventodepos.each do |eventodepo| %>
+  <tr>
+    <td><%= eventodepo.nombre %></td>
+    <td><%= eventodepo.premio %></td>
+    <td><%= eventodepo.cantidad %></td>
+    <td><%= eventodepo.plazoinsc %></td>
+    <td><%= link_to 'Show', eventodepo %></td>
+    <td><%= link_to 'Edit', edit_eventodepo_path(eventodepo) %></td>
+    <td><%= link_to 'Destroy', eventodepo, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Eventodepo', new_eventodepo_path %>

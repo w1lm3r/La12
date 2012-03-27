@@ -1,0 +1,35 @@
+<h1>Listing publicidads</h1>
+
+<table>
+  <tr>
+    <th>Titulo</th>
+    <th>Contenido</th>
+    <th>Fecinicio</th>
+    <th>Fecfin</th>
+    <th>Tarifa</th>
+    <th>Numclics</th>
+    <th>Ubicacion</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @publicidads.each do |publicidad| %>
+  <tr>
+    <td><%= publicidad.titulo %></td>
+    <td><%= publicidad.contenido %></td>
+    <td><%= publicidad.fecinicio %></td>
+    <td><%= publicidad.fecfin %></td>
+    <td><%= publicidad.tarifa %></td>
+    <td><%= publicidad.numclics %></td>
+    <td><%= publicidad.ubicacion %></td>
+    <td><%= link_to 'Show', publicidad %></td>
+    <td><%= link_to 'Edit', edit_publicidad_path(publicidad) %></td>
+    <td><%= link_to 'Destroy', publicidad, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Publicidad', new_publicidad_path %>

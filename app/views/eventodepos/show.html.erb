@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @eventodepo.nombre %>
+</p>
+
+<p>
+  <b>Premio:</b>
+  <%= @eventodepo.premio %>
+</p>
+
+<p>
+  <b>Cantidad:</b>
+  <%= @eventodepo.cantidad %>
+</p>
+
+<p>
+  <b>Plazoinsc:</b>
+  <%= @eventodepo.plazoinsc %>
+</p>
+
+
+<%= link_to 'Edit', edit_eventodepo_path(@eventodepo) %> |
+<%= link_to 'Back', eventodepos_path %>

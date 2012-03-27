@@ -11,7 +11,14 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120325203350) do
+ActiveRecord::Schema.define(:version => 20120327044033) do
+
+  create_table "coments", :force => true do |t|
+    t.string   "texto"
+    t.integer  "calificacion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "locals", :force => true do |t|
     t.string   "nombre"
@@ -35,6 +42,14 @@ ActiveRecord::Schema.define(:version => 20120325203350) do
     t.string   "password"
     t.date     "fecnac"
     t.string   "telefono"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "servicios", :force => true do |t|
+    t.string   "tipo"
+    t.string   "descripcion"
+    t.decimal  "tarifa"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

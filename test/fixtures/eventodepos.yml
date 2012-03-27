@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  premio: 9.99
+  cantidad: 1
+  plazoinsc: 2012-03-27 00:34:33
+
+two:
+  nombre: MyString
+  premio: 9.99
+  cantidad: 1
+  plazoinsc: 2012-03-27 00:34:33

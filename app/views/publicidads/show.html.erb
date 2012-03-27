@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Titulo:</b>
+  <%= @publicidad.titulo %>
+</p>
+
+<p>
+  <b>Contenido:</b>
+  <%= @publicidad.contenido %>
+</p>
+
+<p>
+  <b>Fecinicio:</b>
+  <%= @publicidad.fecinicio %>
+</p>
+
+<p>
+  <b>Fecfin:</b>
+  <%= @publicidad.fecfin %>
+</p>
+
+<p>
+  <b>Tarifa:</b>
+  <%= @publicidad.tarifa %>
+</p>
+
+<p>
+  <b>Numclics:</b>
+  <%= @publicidad.numclics %>
+</p>
+
+<p>
+  <b>Ubicacion:</b>
+  <%= @publicidad.ubicacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_publicidad_path(@publicidad) %> |
+<%= link_to 'Back', publicidads_path %>
