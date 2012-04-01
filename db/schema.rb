@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120327044033) do
+ActiveRecord::Schema.define(:version => 20120327051809) do
 
   create_table "coments", :force => true do |t|
     t.string   "texto"
@@ -42,6 +42,18 @@ ActiveRecord::Schema.define(:version => 20120327044033) do
     t.string   "password"
     t.date     "fecnac"
     t.string   "telefono"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "publicidads", :force => true do |t|
+    t.string   "titulo"
+    t.string   "contenido"
+    t.date     "fecinicio"
+    t.date     "fecfin"
+    t.decimal  "tarifa"
+    t.integer  "numclics"
+    t.string   "ubicacion"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

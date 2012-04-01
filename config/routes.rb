@@ -1,8 +1,4 @@
 LA12::Application.routes.draw do
-  resources :eventodepos
-
-  resources :eventos
-
   resources :publicidads
 
   resources :coments
