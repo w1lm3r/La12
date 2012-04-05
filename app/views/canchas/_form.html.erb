@@ -1,0 +1,145 @@
+<%= form_for(@cancha) do |f| %>
+  <% if @cancha.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@cancha.errors.count, "error") %> prohibited this cancha from being saved:</h2>
+
+      <ul>
+      <% @cancha.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :caracteristica %><br />
+    <%= f.text_area :caracteristica %>
+  </div>
+  <div class="field">
+    <%= f.label :alunes %><br />
+    <%= f.check_box :alunes %>
+  </div>
+  <div class="field">
+    <%= f.label :amartes %><br />
+    <%= f.check_box :amartes %>
+  </div>
+  <div class="field">
+    <%= f.label :amiercoles %><br />
+    <%= f.check_box :amiercoles %>
+  </div>
+  <div class="field">
+    <%= f.label :ajueves %><br />
+    <%= f.check_box :ajueves %>
+  </div>
+  <div class="field">
+    <%= f.label :aviernes %><br />
+    <%= f.check_box :aviernes %>
+  </div>
+  <div class="field">
+    <%= f.label :asabado %><br />
+    <%= f.check_box :asabado %>
+  </div>
+  <div class="field">
+    <%= f.label :adomingo %><br />
+    <%= f.check_box :adomingo %>
+  </div>
+  <div class="field">
+    <%= f.label :hLunes %><br />
+    <%= f.text_field :hLunes %>
+  </div>
+  <div class="field">
+    <%= f.label :hMartes %><br />
+    <%= f.text_field :hMartes %>
+  </div>
+  <div class="field">
+    <%= f.label :hMiercoles %><br />
+    <%= f.text_field :hMiercoles %>
+  </div>
+  <div class="field">
+    <%= f.label :hJueves %><br />
+    <%= f.text_field :hJueves %>
+  </div>
+  <div class="field">
+    <%= f.label :hViernes %><br />
+    <%= f.text_field :hViernes %>
+  </div>
+  <div class="field">
+    <%= f.label :hSabado %><br />
+    <%= f.text_field :hSabado %>
+  </div>
+  <div class="field">
+    <%= f.label :hDomingo %><br />
+    <%= f.text_field :hDomingo %>
+  </div>
+  <div class="field">
+    <%= f.label :lunesT1 %><br />
+    <%= f.text_field :lunesT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :lunesT2 %><br />
+    <%= f.text_field :lunesT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :martesT1 %><br />
+    <%= f.text_field :martesT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :martesT2 %><br />
+    <%= f.text_field :martesT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :miercolesT1 %><br />
+    <%= f.text_field :miercolesT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :miercolesT2 %><br />
+    <%= f.text_field :miercolesT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :juevesT1 %><br />
+    <%= f.text_field :juevesT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :juevesT2 %><br />
+    <%= f.text_field :juevesT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :viernesT1 %><br />
+    <%= f.text_field :viernesT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :viernesT2 %><br />
+    <%= f.text_field :viernesT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :sabadoT1 %><br />
+    <%= f.text_field :sabadoT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :sabadoT2 %><br />
+    <%= f.text_field :sabadoT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :domingoT1 %><br />
+    <%= f.text_field :domingoT1 %>
+  </div>
+  <div class="field">
+    <%= f.label :domingoT2 %><br />
+    <%= f.text_field :domingoT2 %>
+  </div>
+  <div class="field">
+    <%= f.label :promocion %><br />
+    <%= f.text_area :promocion %>
+  </div>
+  <div class="field">
+    <%= f.label :foto %><br />
+    <%= f.text_field :foto %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,69 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  caracteristica: MyText
+  alunes: false
+  amartes: false
+  amiercoles: false
+  ajueves: false
+  aviernes: false
+  asabado: false
+  adomingo: false
+  hLunes: MyString
+  hMartes: MyString
+  hMiercoles: MyString
+  hJueves: MyString
+  hViernes: MyString
+  hSabado: MyString
+  hDomingo: MyString
+  lunesT1: 9.99
+  lunesT2: 9.99
+  martesT1: 9.99
+  martesT2: 9.99
+  miercolesT1: 9.99
+  miercolesT2: 9.99
+  juevesT1: 9.99
+  juevesT2: 9.99
+  viernesT1: 9.99
+  viernesT2: 9.99
+  sabadoT1: 9.99
+  sabadoT2: 9.99
+  domingoT1: 9.99
+  domingoT2: 9.99
+  promocion: MyText
+  foto: 
+
+two:
+  nombre: MyString
+  caracteristica: MyText
+  alunes: false
+  amartes: false
+  amiercoles: false
+  ajueves: false
+  aviernes: false
+  asabado: false
+  adomingo: false
+  hLunes: MyString
+  hMartes: MyString
+  hMiercoles: MyString
+  hJueves: MyString
+  hViernes: MyString
+  hSabado: MyString
+  hDomingo: MyString
+  lunesT1: 9.99
+  lunesT2: 9.99
+  martesT1: 9.99
+  martesT2: 9.99
+  miercolesT1: 9.99
+  miercolesT2: 9.99
+  juevesT1: 9.99
+  juevesT2: 9.99
+  viernesT1: 9.99
+  viernesT2: 9.99
+  sabadoT1: 9.99
+  sabadoT2: 9.99
+  domingoT1: 9.99
+  domingoT2: 9.99
+  promocion: MyText
+  foto: 

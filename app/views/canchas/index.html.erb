@@ -1,0 +1,85 @@
+<h1>Listing canchas</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Caracteristica</th>
+    <th>Alunes</th>
+    <th>Amartes</th>
+    <th>Amiercoles</th>
+    <th>Ajueves</th>
+    <th>Aviernes</th>
+    <th>Asabado</th>
+    <th>Adomingo</th>
+    <th>Hlunes</th>
+    <th>Hmartes</th>
+    <th>Hmiercoles</th>
+    <th>Hjueves</th>
+    <th>Hviernes</th>
+    <th>Hsabado</th>
+    <th>Hdomingo</th>
+    <th>Lunest1</th>
+    <th>Lunest2</th>
+    <th>Martest1</th>
+    <th>Martest2</th>
+    <th>Miercolest1</th>
+    <th>Miercolest2</th>
+    <th>Juevest1</th>
+    <th>Juevest2</th>
+    <th>Viernest1</th>
+    <th>Viernest2</th>
+    <th>Sabadot1</th>
+    <th>Sabadot2</th>
+    <th>Domingot1</th>
+    <th>Domingot2</th>
+    <th>Promocion</th>
+    <th>Foto</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @canchas.each do |cancha| %>
+  <tr>
+    <td><%= cancha.nombre %></td>
+    <td><%= cancha.caracteristica %></td>
+    <td><%= cancha.alunes %></td>
+    <td><%= cancha.amartes %></td>
+    <td><%= cancha.amiercoles %></td>
+    <td><%= cancha.ajueves %></td>
+    <td><%= cancha.aviernes %></td>
+    <td><%= cancha.asabado %></td>
+    <td><%= cancha.adomingo %></td>
+    <td><%= cancha.hLunes %></td>
+    <td><%= cancha.hMartes %></td>
+    <td><%= cancha.hMiercoles %></td>
+    <td><%= cancha.hJueves %></td>
+    <td><%= cancha.hViernes %></td>
+    <td><%= cancha.hSabado %></td>
+    <td><%= cancha.hDomingo %></td>
+    <td><%= cancha.lunesT1 %></td>
+    <td><%= cancha.lunesT2 %></td>
+    <td><%= cancha.martesT1 %></td>
+    <td><%= cancha.martesT2 %></td>
+    <td><%= cancha.miercolesT1 %></td>
+    <td><%= cancha.miercolesT2 %></td>
+    <td><%= cancha.juevesT1 %></td>
+    <td><%= cancha.juevesT2 %></td>
+    <td><%= cancha.viernesT1 %></td>
+    <td><%= cancha.viernesT2 %></td>
+    <td><%= cancha.sabadoT1 %></td>
+    <td><%= cancha.sabadoT2 %></td>
+    <td><%= cancha.domingoT1 %></td>
+    <td><%= cancha.domingoT2 %></td>
+    <td><%= cancha.promocion %></td>
+    <td><%= cancha.foto %></td>
+    <td><%= link_to 'Show', cancha %></td>
+    <td><%= link_to 'Edit', edit_cancha_path(cancha) %></td>
+    <td><%= link_to 'Destroy', cancha, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Cancha', new_cancha_path %>
