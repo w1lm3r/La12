@@ -10,20 +10,15 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :tipo %><br />
-    <%= f.text_field :tipo %>
-  </div>
-  <div class="field">
-    <%= f.label :descripcion %><br />
-    <%= f.text_field :descripcion %>
-  </div>
-  <div class="field">
-    <%= f.label :tarifa %><br />
-    <%= f.text_field :tarifa %>
-  </div>
+  
+  
+  <table border="1" width="30%">
+  <tr><td><%= f.label :tipo %></td>     <td><%= f.text_field :tipo %></td></tr>
+  <tr><td><%= f.label :descripcion %><br /></td>  <td><%= f.text_field :descripcion %></td></tr>
+  <tr><td><%= f.label :tarifa %></td>         <td><%= f.text_field :tarifa %></td></tr>
+  </table>
   <div class="actions">
     <%= f.submit %>
   </div>
+
 <% end %>

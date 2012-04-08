@@ -1,0 +1,31 @@
+<h1>Listing depoeventos</h1>
+
+<table>
+  <tr>
+    <th>Nombre</th>
+    <th>Premio</th>
+    <th>Maxequipos</th>
+    <th>Del</th>
+    <th>Al</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @depoeventos.each do |depoevento| %>
+  <tr>
+    <td><%= depoevento.nombre %></td>
+    <td><%= depoevento.premio %></td>
+    <td><%= depoevento.maxequipos %></td>
+    <td><%= depoevento.del %></td>
+    <td><%= depoevento.al %></td>
+    <td><%= link_to 'Show', depoevento %></td>
+    <td><%= link_to 'Edit', edit_depoevento_path(depoevento) %></td>
+    <td><%= link_to 'Destroy', depoevento, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Depoevento', new_depoevento_path %>

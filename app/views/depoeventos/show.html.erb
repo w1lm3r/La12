@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Nombre:</b>
+  <%= @depoevento.nombre %>
+</p>
+
+<p>
+  <b>Premio:</b>
+  <%= @depoevento.premio %>
+</p>
+
+<p>
+  <b>Maxequipos:</b>
+  <%= @depoevento.maxequipos %>
+</p>
+
+<p>
+  <b>Del:</b>
+  <%= @depoevento.del %>
+</p>
+
+<p>
+  <b>Al:</b>
+  <%= @depoevento.al %>
+</p>
+
+
+<%= link_to 'Edit', edit_depoevento_path(@depoevento) %> |
+<%= link_to 'Back', depoeventos_path %>

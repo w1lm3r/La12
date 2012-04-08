@@ -11,50 +11,73 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :tipo %><br />
-    <%= f.text_field :tipo %>
-  </div>
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :apepat %><br />
-    <%= f.text_field :apepat %>
-  </div>
-  <div class="field">
-    <%= f.label :apemat %><br />
-    <%= f.text_field :apemat %>
-  </div>
-  <div class="field">
-    <%= f.label :sexo %><br />
-    <%= f.text_field :sexo %>
-  </div>
-  <div class="field">
-    <%= f.label :tipdoc %><br />
-    <%= f.text_field :tipdoc %>
-  </div>
-  <div class="field">
-    <%= f.label :numdoc %><br />
-    <%= f.text_field :numdoc %>
-  </div>
-  <div class="field">
-    <%= f.label :correo %><br />
-    <%= f.text_field :correo %>
-  </div>
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.text_field :password %>
-  </div>
-  <div class="field">
-    <%= f.label :fecnac %><br />
-    <%= f.date_select :fecnac %>
-  </div>
-  <div class="field">
-    <%= f.label :telefono %><br />
-    <%= f.text_field :telefono %>
-  </div>
+  <TABLE BORDER="1" width="50%"> 
+<TR> 
+   <TD width="25%"><%= f.label :tipo %></TD>
+<TD  colspan= "3">   
+<class="field">
+<SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('prueba');"> 
+<OPTION VALUE="opcion1">Cliente</OPTION>
+<OPTION VALUE="opcion2">Dueno</OPTION> 
+</SELECT> 
+</TD> 
+</TR> 
+<TR> 
+   <TD ><%= f.label :nombre %></TD> 
+   <TD colspan= "3"><%= f.text_field :nombre %></TD> 
+ 
+</TR> 
+<TR> 
+   <TD><%= f.label :apepat %></TD> 
+   <TD colspan= "3"><%= f.text_field :apepat %></TD> 
+</TR>
+<TR> 
+   <TD width="25%"><%= f.label :apemat %></TD> 
+   <TD colspan= "3"><%= f.text_field :apemat %></TD> 
+
+</TR>
+<TR> 
+   <TD width="25%"><%= f.label :sexo %></TD> 
+<TD width="25%" colspan= "3">   
+<class="field">
+<SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('prueba');"> 
+<OPTION VALUE="opcion1">Masculino</OPTION>
+<OPTION VALUE="opcion2">Femenino</OPTION> 
+</SELECT> 
+</TD> 
+</TR>
+<TR > 
+   <TD width="25%"><%= f.label :tipdoc %></TD> 
+<TD width="25%">   
+<class="field">
+<SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('prueba');"> 
+<OPTION VALUE="dni">Dni</OPTION>
+<OPTION VALUE="ce">Carnet Extranjeria</OPTION> 
+</SELECT> 
+</TD> 
+<TD width="25%"><%= f.label :numdoc %>
+</TD>
+<TD width="25%"><%= f.text_field :numdoc %>
+</TD>
+</TR>
+<TR> 
+   <TD width="25%"><%= f.label :correo %></TD> 
+   <TD colspan= "3"><%= f.text_field :correo %></TD> 
+</TR>
+<TR> 
+   <TD width="25%"><%= f.label :password %></TD> 
+   <TD width="25%"><%= f.text_field :password %></TD> 
+   <TD width="25%"><%= f.label :fecnac %>
+</TD>
+<TD width="25%"><%= f.date_select :fecnac %>
+</TD>
+</TR>
+<TR> 
+   <TD width="25%"><%= f.label :telefono %></TD> 
+   <TD width="25%" colspan= "3"><%= f.text_field :telefono %></TD> 
+</TR>      
+</TABLE> 
+
   <div class="actions">
     <%= f.submit %>
   </div>

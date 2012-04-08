@@ -10,135 +10,85 @@
       </ul>
     </div>
   <% end %>
+  
+  
+  <table border="1" width="10%">
+  <tr><td><%= f.label :nombre %></td><td colspan= "5"><%= f.text_field :nombre %></td></tr>
+  <tr><td><%= f.label :caracteristica %></td><td colspan= "5"><%= f.text_area :caracteristica %>      </td></tr>
+  <tr>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td></td>
+  <td align ="center"><%= f.label :Tarifa1 %></td>
+  <td align ="center"><%= f.label :Tarifa2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :alunes %></td>
+  <td><%= f.label :alunes %></td>
+  <td><%= f.label :hLunes %></td>
+  <td><%= f.text_field :hLunes %></td>
+  <td><%= f.text_field :lunesT1 %></td>
+  <td><%= f.text_field :lunesT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :amartes %></td>
+  <td><%= f.label :amartes %></td>
+  <td><%= f.label :hMartes %></td>
+  <td><%= f.text_field :hMartes %> </td>
+    <td><%= f.text_field :martesT1 %></td>
+  <td><%= f.text_field :martesT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :amiercoles %></td>
+  <td><%= f.label :amiercoles %></td>
+  <td><%= f.label :hMiercoles %></td>
+  <td><%= f.text_field :hMiercoles %> </td>
+    <td><%= f.text_field :miercolesT1 %></td>
+  <td><%= f.text_field :miercolesT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :ajueves %></td>
+  <td><%= f.label :ajueves %></td>
+  <td><%= f.label :hJueves %> </td>
+  <td><%= f.text_field :hJueves %></td>
+  <td><%= f.text_field :juevesT1 %></td>
+  <td><%= f.text_field :juevesT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :aviernes %></td>
+  <td><%= f.label :aviernes %></td>
+  <td><%= f.label :hViernes %></td>
+  <td><%= f.text_field :hViernes %> </td>
+  <td><%= f.text_field :viernesT1 %></td>
+  <td><%= f.text_field :viernesT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :asabado %></td>
+  <td><%= f.label :asabado %></td>
+    <td><%= f.label :hSabado %></td>
+  <td><%= f.text_field :hSabado %></td>
+    <td><%= f.text_field :sabadoT1 %></td>
+  <td><%= f.text_field :sabadoT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.check_box :adomingo %></td>
+  <td><%= f.label :adomingo %></td>
+  <td><%= f.label :hDomingo %></td>
+  <td><%= f.text_field :hDomingo %></td>
+  <td><%= f.text_field :domingoT1 %></td>
+  <td><%= f.text_field :domingoT2 %></td>
+  </tr>
+  <tr>
+  <td><%= f.label :promocion %></td>
+  <td colspan = "5"><%= f.text_area :promocion %></td>
+  </tr>
+  <tr>
+  <td><%= f.label :foto %></td>
+  <td colspan = "5"><%= f.text_field :foto %></td>
 
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
-  </div>
-  <div class="field">
-    <%= f.label :caracteristica %><br />
-    <%= f.text_area :caracteristica %>
-  </div>
-  <div class="field">
-    <%= f.label :alunes %><br />
-    <%= f.check_box :alunes %>
-  </div>
-  <div class="field">
-    <%= f.label :amartes %><br />
-    <%= f.check_box :amartes %>
-  </div>
-  <div class="field">
-    <%= f.label :amiercoles %><br />
-    <%= f.check_box :amiercoles %>
-  </div>
-  <div class="field">
-    <%= f.label :ajueves %><br />
-    <%= f.check_box :ajueves %>
-  </div>
-  <div class="field">
-    <%= f.label :aviernes %><br />
-    <%= f.check_box :aviernes %>
-  </div>
-  <div class="field">
-    <%= f.label :asabado %><br />
-    <%= f.check_box :asabado %>
-  </div>
-  <div class="field">
-    <%= f.label :adomingo %><br />
-    <%= f.check_box :adomingo %>
-  </div>
-  <div class="field">
-    <%= f.label :hLunes %><br />
-    <%= f.text_field :hLunes %>
-  </div>
-  <div class="field">
-    <%= f.label :hMartes %><br />
-    <%= f.text_field :hMartes %>
-  </div>
-  <div class="field">
-    <%= f.label :hMiercoles %><br />
-    <%= f.text_field :hMiercoles %>
-  </div>
-  <div class="field">
-    <%= f.label :hJueves %><br />
-    <%= f.text_field :hJueves %>
-  </div>
-  <div class="field">
-    <%= f.label :hViernes %><br />
-    <%= f.text_field :hViernes %>
-  </div>
-  <div class="field">
-    <%= f.label :hSabado %><br />
-    <%= f.text_field :hSabado %>
-  </div>
-  <div class="field">
-    <%= f.label :hDomingo %><br />
-    <%= f.text_field :hDomingo %>
-  </div>
-  <div class="field">
-    <%= f.label :lunesT1 %><br />
-    <%= f.text_field :lunesT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :lunesT2 %><br />
-    <%= f.text_field :lunesT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :martesT1 %><br />
-    <%= f.text_field :martesT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :martesT2 %><br />
-    <%= f.text_field :martesT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :miercolesT1 %><br />
-    <%= f.text_field :miercolesT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :miercolesT2 %><br />
-    <%= f.text_field :miercolesT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :juevesT1 %><br />
-    <%= f.text_field :juevesT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :juevesT2 %><br />
-    <%= f.text_field :juevesT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :viernesT1 %><br />
-    <%= f.text_field :viernesT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :viernesT2 %><br />
-    <%= f.text_field :viernesT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :sabadoT1 %><br />
-    <%= f.text_field :sabadoT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :sabadoT2 %><br />
-    <%= f.text_field :sabadoT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :domingoT1 %><br />
-    <%= f.text_field :domingoT1 %>
-  </div>
-  <div class="field">
-    <%= f.label :domingoT2 %><br />
-    <%= f.text_field :domingoT2 %>
-  </div>
-  <div class="field">
-    <%= f.label :promocion %><br />
-    <%= f.text_area :promocion %>
-  </div>
-  <div class="field">
-    <%= f.label :foto %><br />
-    <%= f.text_field :foto %>
-  </div>
+  </tr>
+  </table>
   <div class="actions">
     <%= f.submit %>
   </div>

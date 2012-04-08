@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  nombre: MyString
+  premio: MyString
+  maxequipos: 1
+  del: 2012-04-08 12:14:49
+  al: 2012-04-08 12:14:49
+
+two:
+  nombre: MyString
+  premio: MyString
+  maxequipos: 1
+  del: 2012-04-08 12:14:49
+  al: 2012-04-08 12:14:49
