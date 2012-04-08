@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :persona %><br />
+    <%= f.collection_select :persona_id, Persona.all, :id, :nombre, :prompt => true %>
+  </div> 
   <div class="field">
     <%= f.label :fecha %><br />
     <%= f.datetime_select :fecha %>

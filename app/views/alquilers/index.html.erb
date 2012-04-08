@@ -11,10 +11,11 @@
 <% @alquilers.each do |alquiler| %>
   <tr>
     <td><%= alquiler.fecha %></td>
-	<td><%= alquiler.cancha.nombre%></td>
-    <td><%= link_to 'Show', alquiler %></td>
-    <td><%= link_to 'Edit', edit_alquiler_path(alquiler) %></td>
-    <td><%= link_to 'Destroy', alquiler, confirm: 'Are you sure?', method: :delete %></td>
+	<td>&nbsp<%= alquiler.cancha.nombre%></td>
+	<td>&nbsp<%= alquiler.persona.nombre%></td>
+    <td>&nbsp<%= link_to 'Show', alquiler %></td>
+    <td>&nbsp<%= link_to 'Edit', edit_alquiler_path(alquiler) %></td>
+    <td>&nbsp<%= link_to 'Destroy', alquiler, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
