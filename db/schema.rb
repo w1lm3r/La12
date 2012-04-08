@@ -85,15 +85,6 @@ ActiveRecord::Schema.define(:version => 20120408214355) do
     t.datetime "updated_at"
   end
 
-  create_table "eventos", :force => true do |t|
-    t.string   "nombre"
-    t.decimal  "premio"
-    t.integer  "cantidad"
-    t.date     "plazoinsc"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "locals", :force => true do |t|
     t.string   "nombre"
     t.string   "direccion"

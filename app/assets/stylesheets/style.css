@@ -419,3 +419,14 @@ footer {
 		.list-services li a.it-3 {background-position:0 -80px}
 		.list-services li a.it-4 {background-position:0 -120px}
 		.list-services li a:hover {color:#fff}
+		
+#form1 .right {width:140px}
+#form1 .row {height:30px;line-height:22px}
+#form1 .row_textarea {height:102px;line-height:22px}
+#form1 .input {font:12px Arial, Helvetica, sans-serif;color:#72716f;background:none;height:15px;padding:3px 5px;width:128px;margin:0}
+/* -------------
+ * Inputs
+ * ------------- */
+.jqTransformInputWrapper {border:1px solid #2a2824;position:relative;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;float:right;height:21px;width:138px !important}
+.jqTransformTextarea {border:1px solid #2a2824;position:relative;border-radius:1px;-moz-border-radius:1px;-webkit-border-radius:1px;height:64px;width:100%;margin-top:4px}
+		
