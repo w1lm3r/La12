@@ -1,0 +1,26 @@
+<%= form_for(@alquiler) do |f| %>
+  <% if @alquiler.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@alquiler.errors.count, "error") %> prohibited this alquiler from being saved:</h2>
+
+      <ul>
+      <% @alquiler.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :fecha %><br />
+    <%= f.datetime_select :fecha %>
+  </div>
+  <div class="field">
+    <%= f.label :cancha %><br />
+    <%= f.collection_select :cancha_id, Cancha.all, :id, :nombre, :prompt => true %>
+  </div>  
+  
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

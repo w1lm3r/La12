@@ -1,4 +1,6 @@
 LA12::Application.routes.draw do
+  resources :alquilers
+
   resources :depoeventos
 
   resources :canchas

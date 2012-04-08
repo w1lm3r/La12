@@ -1,0 +1,24 @@
+<h1>Listing alquilers</h1>
+
+<table>
+  <tr>
+    <th>Fecha</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alquilers.each do |alquiler| %>
+  <tr>
+    <td><%= alquiler.fecha %></td>
+	<td><%= alquiler.cancha.nombre%></td>
+    <td><%= link_to 'Show', alquiler %></td>
+    <td><%= link_to 'Edit', edit_alquiler_path(alquiler) %></td>
+    <td><%= link_to 'Destroy', alquiler, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alquiler', new_alquiler_path %>
