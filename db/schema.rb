@@ -11,7 +11,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120408181501) do
+ActiveRecord::Schema.define(:version => 20120408214355) do
+
+  create_table "alquilers", :force => true do |t|
+    t.datetime "fecha"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "cancha_id"
+    t.integer  "persona_id"
+  end
 
   create_table "canchas", :force => true do |t|
     t.string   "nombre"
