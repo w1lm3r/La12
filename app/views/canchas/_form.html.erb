@@ -89,6 +89,11 @@
 
   </tr>
   </table>
+  <div class="field">
+    <%= f.label :persona %><br />
+    <%= f.collection_select :persona_id, Persona.all, :id, :nombre, :prompt => true %>
+  </div>  
+  
   <div class="actions">
     <%= f.submit %>
   </div>

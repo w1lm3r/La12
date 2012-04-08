@@ -5,7 +5,7 @@ class CreateEventodepos < ActiveRecord::Migration
       t.decimal :premio
       t.integer :cantidad
       t.datetime :plazoinsc
-
+	  
       t.timestamps
     end
   end
