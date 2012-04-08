@@ -1,0 +1,3 @@
+.banner {behavior: url(/assets/PIE.htc);}
+.img-border,
+.button {behavior: url(/assets/PIE.htc); position:relative;}
