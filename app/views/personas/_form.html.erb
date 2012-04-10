@@ -14,17 +14,22 @@
   <TABLE BORDER="1" width="50%"> 
 <TR> 
    <TD width="25%"><%= f.label :tipo %></TD>
-<TD  colspan= "3">   
-<class="field">
-<SELECT NAME="tipo" SIZE=1 ;"> 
-<OPTION VALUE="opcion1">Cliente</OPTION>
-<OPTION VALUE="opcion2">Dueno</OPTION> 
+<TD  colspan= "3">  
+<SELECT NAME="persona[tipo]" id="persona_tipo"> 
+<OPTION VALUE="1">Cliente</OPTION>
+<OPTION VALUE="2">Dueno</OPTION> 
 </SELECT> 
 </TD> 
 </TR> 
 <TR> 
-   <TD ><%= f.label :nombre %></TD> 
-   <TD colspan= "3"><%= f.text_field :nombre %></TD> 
+   <TD ><%= f.label :nombres %></div></TD> 
+   <TD colspan= "3">
+   <div class="row">
+   <input type="text" id="persona_nombre" name="persona[nombre]"
+      size="20" value="<%= @persona.nombre %>" class="input"/>   
+   </div>
+   <%= f.text_field :nombre %>
+   </TD> 
  
 </TR> 
 <TR> 
@@ -40,9 +45,9 @@
    <TD width="25%"><%= f.label :sexo %></TD> 
 <TD width="25%" colspan= "3">   
 <class="field">
-<SELECT NAME="selCombo" SIZE=1 ;"> 
-<OPTION VALUE="opcion1">Masculino</OPTION>
-<OPTION VALUE="opcion2">Femenino</OPTION> 
+<SELECT NAME="persona[sexo]" id="persona_sexo" SIZE=1 ;"> 
+<OPTION VALUE="M">Masculino</OPTION>
+<OPTION VALUE="F">Femenino</OPTION> 
 </SELECT> 
 </TD> 
 </TR>
@@ -50,9 +55,9 @@
    <TD width="25%"><%= f.label :tipdoc %></TD> 
 <TD width="25%">   
 <class="field">
-<SELECT NAME="selCombo" SIZE=1 onChange="javascript:alert('prueba');"> 
-<OPTION VALUE="dni">Dni</OPTION>
-<OPTION VALUE="ce">Carnet Extranjeria</OPTION> 
+<SELECT NAME="persona[tipdoc]" id="persona_tipdoc" SIZE=1 onChange="javascript:alert('prueba');"> 
+<OPTION VALUE="DNI">Dni</OPTION>
+<OPTION VALUE="CE">Carnet Extranjeria</OPTION> 
 </SELECT> 
 </TD> 
 <TD width="25%"><%= f.label :numdoc %>
