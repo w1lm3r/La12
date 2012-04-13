@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <TABLE BORDER="1" width="50%"> 
+  <TABLE BORDER="8" width="50%"> 
 <TR> 
    <TD width="25%"><%= f.label :tipo %></TD>
 <TD  colspan= "3">  
@@ -28,7 +28,7 @@
    <input type="text" id="persona_nombre" name="persona[nombre]"
       size="20" value="<%= @persona.nombre %>" class="input"/>   
    </div>
-   <%= f.text_field :nombre %>
+   
    </TD> 
  
 </TR> 
@@ -74,7 +74,7 @@
    <TD width="25%"><%= f.text_field :password %></TD> 
    <TD width="25%"><%= f.label :fecnac %>
 </TD>
-<TD width="25%"><%= f.date_select :fecnac %>
+&nbsp<TD width="25%"><%= f.date_select :fecnac %>
 </TD>
 </TR>
 <TR> 

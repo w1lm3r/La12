@@ -56,23 +56,25 @@
 				</div>
 			</div><div class="ic">More Website Templates @ TemplateMonster.com - October 31, 2011!</div>
 		</header>	
-
-<h1>Listing personas</h1>
-
-
 <table>
+<tr>
+<th colspan="14" align ="center"><b>LISTADO DE PERSONAS</b></th> 
+</tr>
+<tr>
+<th colspan="14"><b>-----------------------------------------------------------------------------</b></th> 
+</tr>
   <tr>
-    <th>Tipo</th>
-    <th>Nombre</th>
-    <th>Apepat</th>
-    <th>Apemat</th>
-    <th>Sexo</th>
-    <th>Tipdoc</th>
-    <th>Numdoc</th>
-    <th>Correo</th>
-    <th>Password</th>
-    <th>Fecnac</th>
-    <th>Telefono</th>
+    <th>&nbsp&nbsp&nbspTipo</th>
+    <th>&nbsp&nbsp&nbsp&nbspNombre</th>
+    <th>&nbsp&nbsp&nbsp&nbspApepat</th>
+    <th>&nbsp&nbsp&nbsp&nbspApemat</th>
+    <th>&nbsp&nbsp&nbsp&nbspSexo</th>
+    <th>&nbsp&nbsp&nbsp&nbspTipdoc</th>
+    <th>&nbsp&nbsp&nbsp&nbspNumdoc</th>
+    <th>&nbsp&nbsp&nbsp&nbspCorreo</th>
+    <th>&nbsp&nbsp&nbsp&nbspPassword</th>
+    <th>&nbsp&nbsp&nbsp&nbspFecnac</th>
+    <th>&nbsp&nbsp&nbsp&nbspTelefono</th>
     <th></th>
     <th></th>
     <th></th>
@@ -80,26 +82,26 @@
 
 <% @personas.each do |persona| %>
   <tr>
-    <td><%= persona.tipo %></td>
-    <td><%= persona.nombre %></td>
-    <td><%= persona.apepat %></td>
-    <td><%= persona.apemat %></td>
-    <td><%= persona.sexo %></td>
-    <td><%= persona.tipdoc %></td>
-    <td><%= persona.numdoc %></td>
-    <td><%= persona.correo %></td>
-    <td><%= persona.password %></td>
-    <td><%= persona.fecnac %></td>
-    <td><%= persona.telefono %></td>
-    <td><%= link_to 'Show', persona %></td>
-    <td><%= link_to 'Edit', edit_persona_path(persona) %></td>
-    <td><%= link_to 'Destroy', persona, confirm: 'Are you sure?', method: :delete %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.tipo %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.nombre %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.apepat %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.apemat %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.sexo %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.tipdoc %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.numdoc %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.correo %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.password %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.fecnac %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= persona.telefono %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= link_to 'Mostrar', persona %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= link_to 'Modificar', edit_persona_path(persona) %></td>
+    <td>&nbsp&nbsp&nbsp&nbsp<%= link_to 'Eliminar', persona, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Persona', new_persona_path %>
+<%= link_to 'Nueva Persona', new_persona_path %>
 </body>
 </html>
