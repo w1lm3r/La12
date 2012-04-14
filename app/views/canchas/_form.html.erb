@@ -90,8 +90,12 @@
   </tr>
   </table>
   <div class="field">
-    <%= f.label :persona %><br />
+    <%= f.label :Dueno %><br />
     <%= f.collection_select :persona_id, Persona.all, :id, :nombre, :prompt => true %>
+  </div>  
+  <div class="field">
+    <%= f.label :Local %><br />
+    <%= f.collection_select :local_id, Local.all, :id, :nombre, :prompt => true %>
   </div>  
   
   <div class="actions">
