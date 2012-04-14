@@ -56,6 +56,9 @@
 				</div>
 			</div><div class="ic">More Website Templates @ TemplateMonster.com - October 31, 2011!</div>
 		</header>	
+
+			<section id="content">
+			<div class="main">
 <table>
 <tr>
 <th colspan="14" align ="center"><b>LISTADO DE ALQUILERES</b></th> 
@@ -75,13 +78,15 @@
     <td><%= alquiler.fecha %></td>
 	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= alquiler.cancha.nombre%></td>
 	<td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= alquiler.persona.nombre%></td>
+
     <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= link_to 'Show', alquiler %></td>
     <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= link_to 'Edit', edit_alquiler_path(alquiler) %></td>
     <td>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= link_to 'Destroy', alquiler, confirm: 'Are you sure?', method: :delete %></td>
   </tr>
 <% end %>
 </table>
-
 <br />
 
 <%= link_to 'Nuevo ALquiler', new_alquiler_path %>
+	</section>
+			</div >

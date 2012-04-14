@@ -9,11 +9,5 @@ class Persona < ActiveRecord::Base
 	validates_uniqueness_of :correo, :message => "--El correo electronico ya ha sido Ingresado"
 	validates_presence_of :password, :message => "--Ingrese el password por favor"
 	validates_presence_of :telefono, :message => "--Ingrese el Nro. de telefono por favor"
-	#validates :nombre, :presence => true, :uniqueness => true, :message => "ya se esta usando"
-	#def validate
-	#	unless nombre && nombre =~ /\w+/
-	#	errors.add(:nombre,
-	#	"Debe especificar un nombre")
-	#	end
-	#end	
+
 end

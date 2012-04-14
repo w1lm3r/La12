@@ -10,7 +10,10 @@
       </ul>
     </div>
   <% end %>
-
+  <div class="field">
+    <%= f.label :Cancha %><br />
+    <%= f.collection_select :cancha_id, Cancha.all, :id, :nombre, :prompt => true %>
+  </div> 
   <div class="field">
     <%= f.label :texto %><br />
     <%= f.text_field :texto %>

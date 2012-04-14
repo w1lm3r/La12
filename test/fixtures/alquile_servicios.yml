@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  alquiler_id: MyString
+  servicio_id: MyString
+
+two:
+  alquiler_id: MyString
+  servicio_id: MyString

@@ -1,5 +1,11 @@
 LA12::Application.routes.draw do
-  resources :alquilers
+  resources :alquile_servicios
+
+  resources :alquilers do
+  member do
+    get "add_servicio"
+  end
+end
 
   resources :depoeventos
 

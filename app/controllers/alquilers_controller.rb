@@ -1,6 +1,9 @@
 class AlquilersController < ApplicationController
   # GET /alquilers
   # GET /alquilers.json
+	def add_servicio
+		@alquiler = Alquiler.find(params[:id])
+	end     
   def index
     @alquilers = Alquiler.all
 

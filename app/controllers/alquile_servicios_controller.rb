@@ -1,0 +1,2 @@
+class AlquileServiciosController < ApplicationController
+end
