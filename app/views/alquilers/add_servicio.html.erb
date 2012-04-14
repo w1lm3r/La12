@@ -1,7 +1,7 @@
 <h2>Fecha de Alquiler, <%= @alquiler.fecha %></h2>
 
 <%= simple_form_for @alquiler do |f| %>
-<%= f.association :servicios, :as => "check_boxes" %>
+<%= f.association :servicios, :as => "check_boxes", :collection_wrapper_tag => :ul, :item_wrapper_tag => :li %>
 <%= f.button :submit %>
 
 <% end %>
